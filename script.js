@@ -3,7 +3,7 @@ function compute() {
     const principal = document.getElementById("principal").value;
 
     // alerts if input 0 or less than 0
-    if (parseInt(principal) <= 0){
+    if (principal == "" || parseInt(principal) <= 0){
         alert('Enter a positive number');
         document.getElementById("principal").focus();
 
