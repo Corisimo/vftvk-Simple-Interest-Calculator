@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="maindiv">
+        <body>
+        <div id="div1">
+            <h1>Simple Interest Calculator</h1>
+        </div>
+        <div id="div2">
+            Amount <input type="number"  id="principal">  <br/><br/>
+<!--changed interest rate to range with drop down box-->
+            Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step="0.25" value="10.50"> 
+            <span id="rate_val">
+<!--used 10.50 percent because it was in the documentation that way-->
+                10.50%
+            </span><br/><br/>
+             No. of Years 
+<!--added year options to drop down-->
+            <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>  
+            </br></br>
+            
+            <button onclick="compute()">Compute Interest</button>
+            <br/>
+            <br/>
+            <div id="result">
+    
+            </div>
+        </div>
+        <div id="div3">
+            <footer>
+
+                &#169; This Calculator belongs to Corrie Rowe
+            
+            
+            </footer>
+        </div>
+    </div>  
+   
+    </body>
+    </html>
